@@ -12,10 +12,6 @@
             justify-content: center;
             margin-top: 2rem;
         }
-
-        .flex-container > div {
-            margin-left: 1rem;
-        }
     </style>
 </head>
 
@@ -48,19 +44,26 @@
 </nav>
 
 <body>
+    <h1 style="text-align: center;">Basic Arithmetic</h1>
     <div class="flex-container">
-
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="applet-1.html" class="btn btn-primary">Go</a>
+        
+        <form>
+            <div class="form-group">
+                <input id="num1" class="form-control input-form" placeholder="Please enter num 1"> 
+                <br>
+                <input id="num2" class="form-control input-form" placeholder="Please enter num 2"> 
             </div>
-          </div>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="performOperation('add')">Addition</button>
+            <button type="button" class="btn btn-primary" onclick="performOperation('subtract')">Subtraction</button>
+            <button type="button" class="btn btn-primary" onclick="performOperation('multiply')">Multiplication</button>
+            <button type="button" class="btn btn-primary" onclick="performOperation('divide')">Division</button>
+        </form>
+        <br>
 
+        
     </div>
-
+    <script src="arithmetic.js"></script>
     
 </body>
 </html>
